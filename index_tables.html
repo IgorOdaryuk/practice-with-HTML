@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table td {
+            border: 1px solid black;
+        }
+        .table {
+            display: table;
+            border-collapse: collapse;
+        }
+
+        .caption {
+            display: table-caption;
+            text-align: center;
+        }
+
+        .thead {
+            display: table-header-group;
+        }
+
+        .tbody {
+            display: table-row-group;
+        }
+
+        .row {
+            display: table-row;
+        }
+
+        .tfoot {
+            display: table-footer-group;
+        }
+
+        .cell {
+            display: table-cell;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Table</h1>
+    <table>
+        <caption>Our Table</caption>
+        <thead>
+            <tr>
+                <td>Table 1</td>
+                <td>Table 2</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+            <tr>
+                <td>Data 3</td>
+                <td>Data 4</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1>Table with div</h1>
+    <div class="table">
+        <div class="caption">Table with div at last</div>
+        <div class="thead">
+            <div class="row">
+                <div class="cell">Table 1</div>
+                <div class="cell">Table 2</div>
+            </div>
+        </div>
+
+        <div class="tbody">
+            <div class="row">
+                <div class="cell">Data 1</div>
+                <div class="cell">Data 2</div>
+            </div>
+            <div class="row">
+                <div class="cell">Data 3</div>
+                <div class="cell">Data 4</div>
+            </div>
+        </div>
+
+        <div class="tfoot">
+            <div class="row">
+                <div class="cell">Footer 1</div>
+                <div class="cell">Footer 2</div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</body>
+</html>
