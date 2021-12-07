@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="results.html" method="GET">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label for="eamil">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="1" max="200" step="5">
+        </div>
+        <div>
+            <label for="date">Birthday</label>
+            <input type="date" name="date" id="date" min="2000-01-01">
+        </div>
+        <div>
+            <div>
+                Favorite Framework
+                <div>
+                    <label for="react">React</label>
+                    <input type="checkbox" name="react" id="react">
+                </div>
+                <div>
+                    <label for="vue">Vue</label>
+                    <input type="checkbox" name="vue" id="vue">
+                </div>
+            </div>
+            <div>
+                Gender
+                <div>
+                    <label for="male">male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                </div>
+                <div>
+                    <label for="female">female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="eyeColor">EyeColor</label>
+                    <select name="eyeColor" id="eyeColor">
+                        <option value="Green">Green</option>
+                            <option label="Red" value="Red"></option>
+                    </select>
+                </div>
+                <div>
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" name="bio"></textarea>
+                </div>
+                <div>
+            <label>
+                Password
+                <input type="password" name="password" required>
+            </label>
+        </div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        
+    </form>
+</body>
+</html>
