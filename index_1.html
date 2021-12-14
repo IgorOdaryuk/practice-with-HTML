@@ -7,7 +7,11 @@
     <title>Form</title>
 </head>
 <body>
-    <form action="results.html" method="GET">
+    <form action="results.html" method="POST">
+        <!-- why POST method:
+            Appends form-data inside the body of the HTTP request (data is not shown in URL)
+            Has no size limitations
+            Form submissions with POST cannot be bookmarked-->
         <div>
             <label for="name">Name</label>
             <input type="text" name="name" id="name" required>
